@@ -2,7 +2,6 @@
 
 import { Waves, Zap, Activity, RotateCcw, Brain } from "lucide-react"
 import { AnimatedHeader } from "@/components/layout/animated-header"
-
 import { HeroSection } from "@/components/sections/hero-section"
 import { FocusAreas } from "@/components/focus-areas"
 import { ScheduleTimeline } from "@/components/schedule-timeline"
@@ -14,7 +13,7 @@ const focusAreas: FocusArea[] = [
   { icon: Brain, color: "purple-600", borderColor: "purple-200", title: "Championship", subtitle: "Mindset" },
   { icon: Zap, color: "blue-600", borderColor: "blue-200", title: "Racing", subtitle: "Starts" },
   { icon: Activity, color: "green-600", borderColor: "green-200", title: "Transitions", subtitle: "Underwater" },
-  { icon: Waves, color: "teal-600", borderColor: "teal-200", title: "Freestyle", subtitle: "Stroke" },
+  // { icon: Waves, color: "teal-600", borderColor: "teal-200", title: "Freestyle", subtitle: "Stroke" },
   { icon: RotateCcw, color: "orange-600", borderColor: "orange-200", title: "Turns &", subtitle: "Finishes" },
 ]
 
