@@ -2,7 +2,7 @@
 
 import { Waves, Zap, Activity, RotateCcw, Brain } from "lucide-react"
 import { AnimatedHeader } from "@/components/layout/animated-header"
-import { NotificationCard } from "@/components/notification-card"
+
 import { HeroSection } from "@/components/sections/hero-section"
 import { FocusAreas } from "@/components/focus-areas"
 import { ScheduleTimeline } from "@/components/schedule-timeline"
@@ -20,7 +20,7 @@ const focusAreas: FocusArea[] = [
 
 const scheduleData: ScheduleItem[] = [
   {
-    time: "8:00 - 8:45 AM",
+    time: "8:00 - 8:15 AM",
     title: "Championship Mindset",
     icon: Brain,
     color: "purple",
@@ -33,7 +33,7 @@ const scheduleData: ScheduleItem[] = [
     ],
   },
   {
-    time: "8:45 - 9:30 AM",
+    time: "8:15 - 9:00 AM",
     title: "Racing Starts",
     icon: Zap,
     color: "blue",
@@ -46,7 +46,7 @@ const scheduleData: ScheduleItem[] = [
     ],
   },
   {
-    time: "9:30 - 10:15 AM",
+    time: "9:00 - 9:45 AM",
     title: "Transitions & Underwater",
     icon: Activity,
     color: "green",
@@ -58,21 +58,21 @@ const scheduleData: ScheduleItem[] = [
       "Seamless breakout timing",
     ],
   },
+  // {
+  //   time: "10:15 - 11:00 AM",
+  //   title: "Freestyle Stroke",
+  //   icon: Waves,
+  //   color: "teal",
+  //   description: "Efficient freestyle technique development",
+  //   details: [
+  //     "Optimal stroke mechanics",
+  //     "Breathing pattern optimization",
+  //     "Body position and rotation",
+  //     "Catch and pull technique",
+  //   ],
+  // },
   {
-    time: "10:15 - 11:00 AM",
-    title: "Freestyle Stroke",
-    icon: Waves,
-    color: "teal",
-    description: "Efficient freestyle technique development",
-    details: [
-      "Optimal stroke mechanics",
-      "Breathing pattern optimization",
-      "Body position and rotation",
-      "Catch and pull technique",
-    ],
-  },
-  {
-    time: "11:00 - 12:00 PM",
+    time: "9:45 - 10:30 PM",
     title: "Turns & Finishes",
     icon: RotateCcw,
     color: "orange",
@@ -93,7 +93,7 @@ const registrationData: RegistrationData = {
 }
 
 const pricingInfo: PricingInfo = {
-  duration: "4-Hour Intensive",
+  duration: "2.5-Hour Intensive",
   price: "$150",
   description: "Includes elite coaching, video analysis, and technique plan",
 }
@@ -101,7 +101,7 @@ const pricingInfo: PricingInfo = {
 const contactDetails: ContactDetails = {
   name: "The Speed Within",
   email: "info@thespeedwithin.com",
-  phone: "(555) 123-SWIM",
+  phone: "(502) 295-9402",
 }
 
 export default function FreestyleIntensivePage() {
@@ -125,22 +125,18 @@ export default function FreestyleIntensivePage() {
       <AnimatedHeader title="Freestyle Developmental Intensive" onBackClick={handleBackClick} />
 
       <main className="px-6 py-6 space-y-6 max-w-lg mx-auto">
-        <NotificationCard
-          title="Master freestyle technique"
-          subtitle="4-hour developmental intensive"
-          onClick={handleNotificationClick}
-        />
+       
 
         <HeroSection
           icon={Waves}
           title="Freestyle Developmental Intensive"
-          subtitle="4-Hour Development Session"
+          subtitle="2.5-Hour Development Session"
           registration={registrationData}
         />
 
         <FocusAreas areas={focusAreas} />
 
-        <ScheduleTimeline date="Saturday, June 1, 2024" items={scheduleData} />
+        <ScheduleTimeline date="Saturday, July 5, 2025" items={scheduleData} />
 
         <PricingCard
           duration={pricingInfo.duration}
