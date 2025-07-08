@@ -73,7 +73,7 @@ const scheduleData: ScheduleItem[] = [
   //   ],
   // },
   {
-    time: "9:45 - 10:30 PM",
+    time: "9:45 - 11 AM",
     title: "Turns & Finishes",
     icon: RotateCcw,
     color: "orange",
@@ -89,7 +89,7 @@ const scheduleData: ScheduleItem[] = [
 
 const registrationData: RegistrationData = {
   current: 0,
-  total: 30,
+  total: 35,
   progressValue: 0,
 }
 

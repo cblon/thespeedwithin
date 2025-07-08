@@ -28,14 +28,14 @@ export function TwoXMultiplier({ delay = 0.7, className }: TwoXMultiplierProps) 
 
             <div className="flex items-center justify-center gap-4 mb-3">
               <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">6 months</div>
+                <div className="text-2xl font-bold text-gray-900">2 years</div>
                 <div className="text-xs text-gray-600">Self-teaching</div>
               </div>
 
               <ArrowRight className="h-5 w-5 text-green-600" />
 
               <div className="text-center">
-                <div className="text-2xl font-bold text-green-600">4 hours</div>
+                <div className="text-2xl font-bold text-green-600">3 hours</div>
                 <div className="text-xs text-gray-600">Our intensive</div>
               </div>
             </div>
