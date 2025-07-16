@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Permanent_Marker } from "next/font/google";
 import Image from "next/image"
+import Link from "next/link";
 
 
 const marker = Permanent_Marker({
@@ -24,12 +25,33 @@ export function ContactInfo({ name, email, phone, delay = 3.2 }: ContactInfoProp
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay }}
     >
-      <Image src="/fishbowl.svg" alt="The fishbowl" width={100} height={100}  />
+      <Image src="/fishbowl.svg" alt="The fishbowl" width={100} height={100} />
       <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4, delay: delay + 0.1 }}>
-       <span className={`${marker.className} text-xl`}>
-        {name}
-       </span>
+        <span className={`${marker.className} text-xl`}>
+          {name}
+        </span>
       </motion.p>
+      <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4, delay: delay + 0.2 }}>
+        Coming soon        
+      </motion.p>
+      <Link href="https://forms.gle/5dorqWKurRpAz3LL9" passHref legacyBehavior>
+        <motion.a
+          whileHover={{ scale: 1.1, color: '#ff5722' }}
+          whileTap={{ scale: 0.95 }}
+          style={{
+            backgroundColor: '#ffeb3b', // highlight yellow
+            fontWeight: 'bold',
+            padding: '0.3em 0.6em',
+            borderRadius: '6px',
+            display: 'inline-block',
+            textDecoration: 'none',
+            color: '#000',
+          }}
+        >
+          Join the newsletter
+        </motion.a>
+      </Link>
+
       <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4, delay: delay + 0.2 }}>
         {email}
       </motion.p>

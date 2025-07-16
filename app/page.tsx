@@ -109,7 +109,7 @@ const registrationData: RegistrationData = {
 
 const contactDetails: ContactDetails = {
   name: "The Fishbowl",
-  email: "info@thespeedwithin.com",
+  email: "caryleblondell@gmail.com",
   phone: "(502) 295-9402",
 }
 
