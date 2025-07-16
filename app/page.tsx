@@ -93,11 +93,19 @@ const registrationData: RegistrationData = {
   progressValue: 0,
 }
 
-const pricingInfo: PricingInfo = {
-  duration: "3-Hour Intensive",
-  price: "$150",
-  description: "Includes elite coaching, video analysis, and technique plan",
-}
+  // Pricing - Investment
+ const pricing:any = {
+    duration: "Freestyle Developmental Intensive",
+    price: "$100",
+    description: "",
+  }
+
+  // Payment Information
+ const payment: any = {
+    venmoUsername: "Caryle-Blondell",
+    venmoLink: "https://venmo.com/u/Caryle-Blondell", // Optional: direct Venmo link
+    qrCodeUrl: "/venmo.jpg", // Replace with actual QR code
+  }
 
 const contactDetails: ContactDetails = {
   name: "The Fishbowl",
@@ -358,13 +366,22 @@ export default function FreestyleIntensivePage() {
 
           <SkinInGame delay={2.1} />
 
+              {/* Pricing */}
+      {pricing && (
         <PricingCard
-          duration={pricingInfo.duration}
-          price={pricingInfo.price}
-          description={pricingInfo.description}
-          buttonText="Register Now"
+          duration={pricing.duration}
+          price={pricing.price}
+          description={pricing.description}
+          buttonText="Secure Your Spot"
           onRegister={handleRegister}
+          delay={2.3}
+          // Venmo payment props
+          venmoUsername={payment?.venmoUsername || "elite-swim-academy"}
+          venmoLink={payment?.venmoLink}
+          qrCodeUrl={payment?.qrCodeUrl}
+          programTitle={"Freestyle Developmental Intensive"}
         />
+      )}
         <br />
         <br />
         <br />
