@@ -40,12 +40,21 @@ export function HeroSection({ icon: Icon, title, subtitle, registration, delay =
       </motion.h2>
 
       <motion.p
-        className="text-muted-foreground mb-6"
+        className="text-muted-foreground mb-1"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: delay + 0.3 }}
       >
         {subtitle}
+      </motion.p>
+
+      <motion.p
+        className="text-muted-foreground mb-6"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: delay + 0.3 }}
+      >
+     Sellersburg Town Pool: 415 Oak St, Sellersburg, IN 47172
       </motion.p>
 
       <motion.div

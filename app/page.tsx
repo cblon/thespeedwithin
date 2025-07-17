@@ -88,9 +88,9 @@ const scheduleData: ScheduleItem[] = [
 ]
 
 const registrationData: RegistrationData = {
-  current: 0,
+  current: 1,
   total: 35,
-  progressValue: 0,
+  progressValue: 3,
 }
 
   // Pricing - Investment
