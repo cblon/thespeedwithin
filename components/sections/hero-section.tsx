@@ -54,7 +54,7 @@ export function HeroSection({ icon: Icon, title, subtitle, registration, delay =
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: delay + 0.3 }}
       >
-     Sellersburg Town Pool: 415 Oak St, Sellersburg, IN 47172
+     Clarksville Cove Family Aquatic Center: 800 S Clark Blvd, Clarksville, IN 47129
       </motion.p>
 
       <motion.div
