@@ -28,7 +28,7 @@ export function SkinInGame({ delay = 0.9, className }: SkinInGameProps) {
               <Badge className="bg-blue-600 text-white mb-2">Our Guarantee</Badge>
               <h4 className="font-semibold text-gray-900 mb-2">Coach's Personal Promise</h4>
               <p className="text-sm text-gray-700 mb-3">
-                If you don't see technique improvement within 30 days, I'll personally coach you for free
+                If you don't feel better in the water before your race, I'll personally coach you for free
                 until you do.
               </p>
               <div className="flex items-center gap-2">

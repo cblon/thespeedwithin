@@ -12,53 +12,153 @@ import { SwipeablePersuasionCarousel } from "@/components/swipeable-persuasion-c
 import { SkinInGame } from "@/components/skin-in-game"
 
 const focusAreas: FocusArea[] = [
-  { icon: Brain, color: "purple-600", borderColor: "purple-200", title: "Championship", subtitle: "Mindset" },
-  { icon: Zap, color: "blue-600", borderColor: "blue-200", title: "Racing", subtitle: "Starts" },
-  { icon: Activity, color: "green-600", borderColor: "green-200", title: "Transitions", subtitle: "Underwater" },
-  // { icon: Waves, color: "teal-600", borderColor: "teal-200", title: "Freestyle", subtitle: "Stroke" },
-  { icon: RotateCcw, color: "orange-600", borderColor: "orange-200", title: "Turns &", subtitle: "Finishes" },
+      {
+      icon: Target,
+      color: "purple-600",
+      borderColor: "purple-200",
+      title: "Race Day",
+      subtitle: "Strategy",
+    },
+    {
+      icon: Waves,
+      color: "blue-600",
+      borderColor: "blue-200",
+      title: "Efficient",
+      subtitle: "Stroke",
+    },
+    {
+      icon: Activity,
+      color: "green-600",
+      borderColor: "green-200",
+      title: "Pacing &",
+      subtitle: "Energy",
+    },
+    {
+      icon: Eye,
+      color: "teal-600",
+      borderColor: "teal-200",
+      title: "Open Water",
+      subtitle: "Skills",
+    },
+    {
+      icon: Zap,
+      color: "orange-600",
+      borderColor: "orange-200",
+      title: "Finish &",
+      subtitle: "Transitions",
+    },
+  // { icon: Brain, color: "purple-600", borderColor: "purple-200", title: "Championship", subtitle: "Mindset" },
+  // { icon: Zap, color: "blue-600", borderColor: "blue-200", title: "Racing", subtitle: "Starts" },
+  // { icon: Activity, color: "green-600", borderColor: "green-200", title: "Transitions", subtitle: "Underwater" },
+  // // { icon: Waves, color: "teal-600", borderColor: "teal-200", title: "Freestyle", subtitle: "Stroke" },
+  // { icon: RotateCcw, color: "orange-600", borderColor: "orange-200", title: "Turns &", subtitle: "Finishes" },
 ]
 
 const scheduleData: ScheduleItem[] = [
-  {
-    time: "8:00 - 8:15 AM",
-    title: "Championship Mindset",
-    icon: Brain,
-    color: "purple",
-    description: "Mental preparation and race visualization techniques",
-    details: [
-      // "Pre-race mental preparation strategies",
-      // "Visualization techniques for optimal performance",
-      "Building confidence and focus",
-      // "Managing competition nerves",
-    ],
-  },
-  {
-    time: "8:15 - 9:00 AM",
-    title: "Racing Starts",
-    icon: Zap,
-    color: "blue",
-    description: "Explosive block starts and water entry",
-    details: [
-      "Optimal block positioning and setup",
-      "Explosive start technique",
-      "Perfect water entry angles",
-      // "Reaction time improvement",
-    ],
-  },
-  {
-    time: "9:00 - 9:45 AM",
-    title: "Transitions & Underwater",
-    icon: Activity,
-    color: "green",
-    description: "Streamline and underwater flykick mastery",
-    details: [
-      "Perfect streamline positioning",
-      "Powerful underwater flykick technique",
-      "Optimal kick count strategy",
-      "Seamless breakout timing",
-    ],
-  },
+        {
+        time: "7:30 - 7:48 AM",
+        title: "Race Day Strategy",
+        icon: Target,
+        color: "purple",
+        description: "Mental preparation and race execution planning",
+        details: [
+          "Pre-race warm-up and mental preparation",
+          "Mass start positioning and strategy",
+          "Dealing with contact and chaos",
+          "Staying calm and focused in open water",
+        ],
+      },
+      {
+        time: "7:48 - 8:06 AM",
+        title: "Efficient Stroke Mechanics",
+        icon: Waves,
+        color: "blue",
+        description: "Distance-per-stroke optimization for 3.8km",
+        details: [
+          "High elbow catch for maximum propulsion",
+          "Body rotation and core engagement",
+          "Streamlined body position",
+          "Bilateral breathing technique",
+        ],
+      },
+      {
+        time: "8:06 - 8:24 AM",
+        title: "Pacing & Energy Management",
+        icon: Activity,
+        color: "green",
+        description: "Sustainable pace for the full distance",
+        details: [
+          "Finding your sustainable threshold pace",
+          "Negative split strategy",
+          "Energy conservation techniques",
+          "Heart rate and effort management",
+        ],
+      },
+      {
+        time: "8:24 - 8:42 AM",
+        title: "Open Water Skills",
+        icon: Eye,
+        color: "teal",
+        description: "Navigation, drafting, and open water tactics",
+        details: [
+          "Sighting technique without breaking rhythm",
+          "Swimming straight and course navigation",
+          "Drafting and pack swimming",
+          "Dealing with currents and conditions",
+        ],
+      },
+      {
+        time: "8:42 - 9:00 AM",
+        title: "Finish & Transitions",
+        icon: Zap,
+        color: "orange",
+        description: "Race day execution and T1 preparation",
+        details: [
+          "Wetsuit swimming technique adjustments",
+          "Fast wetsuit removal in T1",
+          "Race day logistics and preparation",
+          "Swim-to-bike transition strategy",
+        ],
+      },
+  // {
+  //   time: "8:00 - 8:15 AM",
+  //   title: "Championship Mindset",
+  //   icon: Brain,
+  //   color: "purple",
+  //   description: "Mental preparation and race visualization techniques",
+  //   details: [
+  //     // "Pre-race mental preparation strategies",
+  //     // "Visualization techniques for optimal performance",
+  //     "Building confidence and focus",
+  //     // "Managing competition nerves",
+  //   ],
+  // },
+  // {
+  //   time: "8:15 - 9:00 AM",
+  //   title: "Racing Starts",
+  //   icon: Zap,
+  //   color: "blue",
+  //   description: "Explosive block starts and water entry",
+  //   details: [
+  //     "Optimal block positioning and setup",
+  //     "Explosive start technique",
+  //     "Perfect water entry angles",
+  //     // "Reaction time improvement",
+  //   ],
+  // },
+  // {
+  //   time: "9:00 - 9:45 AM",
+  //   title: "Transitions & Underwater",
+  //   icon: Activity,
+  //   color: "green",
+  //   description: "Streamline and underwater flykick mastery",
+  //   details: [
+  //     "Perfect streamline positioning",
+  //     "Powerful underwater flykick technique",
+  //     "Optimal kick count strategy",
+  //     "Seamless breakout timing",
+  //   ],
+  // },
   // {
   //   time: "10:15 - 11:00 AM",
   //   title: "Freestyle Stroke",
@@ -72,30 +172,30 @@ const scheduleData: ScheduleItem[] = [
   //     "Catch and pull technique",
   //   ],
   // },
-  {
-    time: "9:45 - 11 AM",
-    title: "Turns & Finishes",
-    icon: RotateCcw,
-    color: "orange",
-    description: "Fast flip turns and winning finishes",
-    details: [
-      "High-speed flip turn technique",
-      "Wall approach optimization",
-      "Powerful push-off mechanics",
-      "Race-winning finish strategy",
-    ],
-  },
+  // {
+  //   time: "9:45 - 11 AM",
+  //   title: "Turns & Finishes",
+  //   icon: RotateCcw,
+  //   color: "orange",
+  //   description: "Fast flip turns and winning finishes",
+  //   details: [
+  //     "High-speed flip turn technique",
+  //     "Wall approach optimization",
+  //     "Powerful push-off mechanics",
+  //     "Race-winning finish strategy",
+  //   ],
+  // },
 ]
 
 const registrationData: RegistrationData = {
-  current: 6,
-  total: 30,
-  progressValue: 30,
+  current: 0,
+  total: 12,
+  progressValue: 0,
 }
 
   // Pricing - Investment
  const pricing:any = {
-    duration: "Freestyle Developmental Intensive",
+    duration: "90 mins Deep Endurance Session (Triathletes only)",
     price: "$100",
     description: "",
   }
@@ -206,12 +306,12 @@ const offering: any = [
       },
       newNormal: {
         id: 'new-normal',
-        title: 'Industry Standard',
+        title: 'The Standard',
         color: 'from-purple-500 to-indigo-500',
         component: 'NewNormal',
         data: {
           badge: {
-            text: 'Industry Standard',
+            text: 'The Standard',
             icon: Star
           },
           title: 'This is How Elite Swimmers Train',
@@ -341,15 +441,15 @@ export default function FreestyleIntensivePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <AnimatedHeader title="Freestyle Developmental Intensive" onBackClick={handleBackClick} />
+      <AnimatedHeader title="90 mins Deep Endurance Session (Triathletes only)" onBackClick={handleBackClick} />
 
       <main className="px-6 py-6 space-y-6 max-w-lg mx-auto">
 
 
         <HeroSection
           icon={Waves}
-          title="Freestyle Developmental Intensive"
-          subtitle="3-Hour Development Session"
+          title="90 mins Deep Endurance Session (Triathletes only)"
+          subtitle="Cover more distance with less effort"
           registration={registrationData}
         />
         <SwipeablePersuasionCarousel
@@ -362,7 +462,7 @@ export default function FreestyleIntensivePage() {
 
         <FocusAreas areas={focusAreas} />
 
-        <ScheduleTimeline date="Wednesday, July 23, 2025" items={scheduleData} />
+        <ScheduleTimeline date="Saturday, August 9th, 2025" items={scheduleData} />
 
           <SkinInGame delay={2.1} />
 
@@ -379,7 +479,7 @@ export default function FreestyleIntensivePage() {
           venmoUsername={payment?.venmoUsername || "elite-swim-academy"}
           venmoLink={payment?.venmoLink}
           qrCodeUrl={payment?.qrCodeUrl}
-          programTitle={"Freestyle Developmental Intensive"}
+          programTitle={"90 mins Deep Endurance Session (Triathletes only)"}
         />
       )}
         <br />

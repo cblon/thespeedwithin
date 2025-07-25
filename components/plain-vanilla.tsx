@@ -12,10 +12,10 @@ interface PlainVanillaProps {
 
 export function PlainVanilla({ delay = 1.3, className }: PlainVanillaProps) {
   const steps = [
-    "Identify your biggest technique flaw",
-    "Apply the correct biomechanical fix",
-    "Practice with immediate feedback",
-    "Lock in the new muscle memory",
+    "Distance per stroke over stroke rate",
+    "Save energy for bike + marathon",
+    "Swim straight, draft effectively",
+    "Race day execution plan",
   ]
 
   return (
@@ -33,7 +33,7 @@ export function PlainVanilla({ delay = 1.3, className }: PlainVanillaProps) {
               Simple Truth
             </Badge>
             <h4 className="font-semibold text-gray-900">It's Actually Pretty Obvious</h4>
-            <p className="text-sm text-gray-700 mt-1">Fast swimming isn't mysterious. It's just 4 simple steps:</p>
+            <p className="text-sm text-gray-700 mt-1">Fast distance swimming isn't mysterious. It's just 4 simple steps:</p>
           </div>
 
           <div className="space-y-2">

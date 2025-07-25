@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { AlertTriangle, Clock, TrendingDown } from "lucide-react"
+import { AlertTriangle, Clock, TrendingDown, Wrench } from "lucide-react"
 
 interface WinterIsComingProps {
   delay?: number
@@ -31,19 +31,18 @@ export function WinterIsComing({ delay = 0.5, className }: WinterIsComingProps) 
                 </Badge>
                 <Clock className="h-4 w-4 text-orange-600" />
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">The Plateau is Real</h4>
+              <h4 className="font-semibold text-gray-900 mb-2">The Swim Will Make or Break Your Race</h4>
               <p className="text-sm text-gray-700 mb-3">
-                Most swimmers hit a wall after 6-12 months. Without proper technique refinement, you'll spend years
-                making the same mistakes.
+               Poor swim technique doesn't just cost you time - it destroys your bike and run. You'll start T1 already in oxygen debt with burning shoulders.
               </p>
-              <div className="flex items-center gap-4 text-xs text-gray-600">
+              <div className="flex flex-col items-center gap-4 text-xs text-gray-600">
                 <div className="flex items-center gap-1">
-                  <TrendingDown className="h-3 w-3 text-red-500" />
-                  <span>Motivation drops 73%</span>
+                  <Clock className="h-3 w-3 text-red-500" />
+                  <span>Bad swim = 20+ min slower overall time</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <Clock className="h-3 w-3 text-orange-500" />
-                  <span>Progress stalls</span>
+                  <Wrench className="h-3 w-3 text-orange-500" />
+                  <span>Shoulder fatigue ruins your bike power</span>
                 </div>
               </div>
             </div>

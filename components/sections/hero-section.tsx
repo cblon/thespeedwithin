@@ -47,15 +47,16 @@ export function HeroSection({ icon: Icon, title, subtitle, registration, delay =
       >
         {subtitle}
       </motion.p>
+      
 
-      <motion.p
+      {/* <motion.p
         className="text-muted-foreground mb-6"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: delay + 0.3 }}
       >
      Clarksville Cove Family Aquatic Center: 800 S Clark Blvd, Clarksville, IN 47129
-      </motion.p>
+      </motion.p> */}
 
       <motion.div
         className="mt-6 px-4"

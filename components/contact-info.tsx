@@ -32,9 +32,9 @@ export function ContactInfo({ name, email, phone, delay = 3.2 }: ContactInfoProp
         </span>
       </motion.p>
       <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4, delay: delay + 0.2 }}>
-        Coming soon        
+        {/* Coming soon         */}
       </motion.p>
-      <Link href="https://forms.gle/5dorqWKurRpAz3LL9" passHref legacyBehavior>
+      <Link href="https://www.instagram.com/the.fishbowl.swim.community" passHref legacyBehavior>
         <motion.a
           whileHover={{ scale: 1.1, color: '#ff5722' }}
           whileTap={{ scale: 0.95 }}
@@ -48,7 +48,7 @@ export function ContactInfo({ name, email, phone, delay = 3.2 }: ContactInfoProp
             color: '#000',
           }}
         >
-          Join the newsletter
+          Follow on Instagram
         </motion.a>
       </Link>
 
