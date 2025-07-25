@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Progress } from "@/components/ui/progress"
 import type { LucideIcon } from "lucide-react"
 import type { RegistrationData } from "@/types"
+import { Badge } from "../ui/badge"
 
 interface HeroSectionProps {
   icon: LucideIcon
@@ -12,9 +13,11 @@ interface HeroSectionProps {
   registration: RegistrationData
   delay?: number
   className?: string
+  badges?: { text: string; variant?: "default" | "secondary" | "destructive" | "outline"; className?: string }[]
+
 }
 
-export function HeroSection({ icon: Icon, title, subtitle, registration, delay = 0.2, className }: HeroSectionProps) {
+export function HeroSection({ icon: Icon, title, subtitle, registration, badges, delay = 0.2, className }: HeroSectionProps) {
   return (
     <motion.section
       className={`text-center py-8 ${className}`}
@@ -39,6 +42,25 @@ export function HeroSection({ icon: Icon, title, subtitle, registration, delay =
         {title}
       </motion.h2>
 
+
+
+      
+      {badges && badges.length > 0 && (
+        <motion.div
+          className="flex flex-wrap justify-center gap-2 mb-3"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: delay + 0.25 }}
+        >
+          {badges.map((badge, index) => (
+            <Badge key={index} variant={badge.variant || "outline"} className={badge.className}>
+              {badge.text}
+            </Badge>
+          ))}
+        </motion.div>
+      )}
+
+
       <motion.p
         className="text-muted-foreground mb-1"
         initial={{ opacity: 0, y: 10 }}
@@ -47,7 +69,6 @@ export function HeroSection({ icon: Icon, title, subtitle, registration, delay =
       >
         {subtitle}
       </motion.p>
-      
 
       {/* <motion.p
         className="text-muted-foreground mb-6"

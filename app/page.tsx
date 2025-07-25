@@ -11,6 +11,21 @@ import type { FocusArea, ScheduleItem, ContactDetails, RegistrationData, Pricing
 import { SwipeablePersuasionCarousel } from "@/components/swipeable-persuasion-carousel"
 import { SkinInGame } from "@/components/skin-in-game"
 
+
+const badges:any = [
+      {
+        text: "Triathletes Only",
+        variant: "outline" as const,
+        className: "border-blue-200 text-blue-700 bg-blue-50",
+      },
+      {
+        text: "Race Registration optional",
+        variant: "outline" as const,
+        className: "border-green-200 text-green-700 bg-green-50",
+      },
+    ]
+
+
 const focusAreas: FocusArea[] = [
       {
       icon: Target,
@@ -195,7 +210,7 @@ const registrationData: RegistrationData = {
 
   // Pricing - Investment
  const pricing:any = {
-    duration: "90 mins Deep Endurance Session (Triathletes only)",
+    duration: "90 mins Deep Endurance Session",
     price: "$100",
     description: "",
   }
@@ -441,15 +456,16 @@ export default function FreestyleIntensivePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <AnimatedHeader title="90 mins Deep Endurance Session (Triathletes only)" onBackClick={handleBackClick} />
+      <AnimatedHeader title="90 mins Deep Endurance Session" onBackClick={handleBackClick} />
 
       <main className="px-6 py-6 space-y-6 max-w-lg mx-auto">
 
 
         <HeroSection
           icon={Waves}
-          title="90 mins Deep Endurance Session (Triathletes only)"
+          title="90 mins Deep Endurance Session"
           subtitle="Cover more distance with less effort"
+           badges={badges}
           registration={registrationData}
         />
         <SwipeablePersuasionCarousel
@@ -479,7 +495,7 @@ export default function FreestyleIntensivePage() {
           venmoUsername={payment?.venmoUsername || "elite-swim-academy"}
           venmoLink={payment?.venmoLink}
           qrCodeUrl={payment?.qrCodeUrl}
-          programTitle={"90 mins Deep Endurance Session (Triathletes only)"}
+          programTitle={"90 mins Deep Endurance Session"}
         />
       )}
         <br />

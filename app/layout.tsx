@@ -6,13 +6,13 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "90 mins Deep Endurance Session (Triathletes only)",
+  title: "90 mins Deep Endurance Session",
   description:
     "4-hour developmental intensive focusing on championship mindset, racing starts, transitions, freestyle stroke, and turns & finishes.",
   keywords: ["swimming", "freestyle", "training", "intensive", "coaching"],
   authors: [{ name: "Elite Swim Academy" }],
   openGraph: {
-    title: "90 mins Deep Endurance Session (Triathletes only)",
+    title: "90 mins Deep Endurance Session",
     description: "4-hour developmental intensive for competitive swimmers",
     type: "website",
     locale: "en_US",

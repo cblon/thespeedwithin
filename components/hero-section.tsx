@@ -3,11 +3,12 @@
 import { motion } from "framer-motion"
 import { Progress } from "@/components/ui/progress"
 import type { LucideIcon } from "lucide-react"
-
+import { Badge } from "@/components/ui/badge"
 interface HeroSectionProps {
   icon: LucideIcon
   title: string
   subtitle: string
+    badges?: { text: string; variant?: "default" | "secondary" | "destructive" | "outline"; className?: string }[]
   registrationCurrent: number
   registrationTotal: number
   progressValue: number
@@ -21,6 +22,7 @@ export function HeroSection({
   registrationCurrent,
   registrationTotal,
   progressValue,
+    badges,
   delay = 0.2,
 }: HeroSectionProps) {
   return (
@@ -53,6 +55,22 @@ export function HeroSection({
       >
         {subtitle}
       </motion.p>
+
+      
+      {badges && badges.length > 0 && (
+        <motion.div
+          className="flex flex-wrap justify-center gap-2 mb-3"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: delay + 0.25 }}
+        >
+          {badges.map((badge, index) => (
+            <Badge key={index} variant={badge.variant || "outline"} className={badge.className}>
+              {badge.text}
+            </Badge>
+          ))}
+        </motion.div>
+      )}
 
       <motion.div
         className="mt-6 px-4"
